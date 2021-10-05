@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--door-width);
+    height: var(--door-height);
+    margin: 5px;
+}
+
+.frame{
+    flex-grow: 1;
+    display: flex;
+    border-left: var(--door-frame);
+    border-top: var(--door-frame);
+    border-right: var(--door-frame);
+    background-color: #0003;
+    width: 90%;
+}
+
+.door{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--door-color);
+    position: relative;
+}
+
+.number{
+    font-size: 3rem;
+    color: #222;
+}
+
+.knob{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 150px;
+    left: 25px;
+    background-color: #773A18;
+    cursor: pointer;
+}
+
+.floor{
+    height: 10px;
+    width: 100%;
+    background-color: #dedede;
+}
+
+.selected{
+    border-left: var(--door-frame-selected);
+    border-top: var(--door-frame-selected);
+    border-right: var(--door-frame-selected);
+}
+
+.selected .number{
+    color: #F7F700;
+}
+
+.selected .knob{
+    background-color: #F7F700;
+}

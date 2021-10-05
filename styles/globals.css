@@ -16,3 +16,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root{
+  --door-height: 340px;
+  --door-width: 200px;
+  --door-color: #A77444;
+  --door-frame: 7px solid #773A18;
+  --door-frame-selected: 7px solid #F7F700;
+}
